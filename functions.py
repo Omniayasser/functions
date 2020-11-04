@@ -2,6 +2,8 @@ def show_menu():
     print(" (1) Check prime")
     print(" (2) Check palindrome")
     print(" (3) Exit")
+
+
 def is_prime(num):
     if num > 1:
         for x in range (2, num):
@@ -21,14 +23,14 @@ def is_plaindrome(word):
 
 count = 1
 while count == 1:
-    print(show_menu())
+    show_menu()
     opperation= int(input(" Choose an opperation"))
     if opperation == 1:
         num=int(input(" enter the number you want to check"))
-        print(is_prime(num))
+        is_prime(num)
     elif opperation == 2:
-        word=str(input(" enter the word you want to check"))
-        print(is_plaindrome(word))
+        word=str(input(" enter anything you want to check"))
+        is_plaindrome(word)
     elif opperation == 3:
         print(" thank you :)")
         count+=1
